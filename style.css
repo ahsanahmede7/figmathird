@@ -1,0 +1,241 @@
+*{margin: 0;padding: 0;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;color: black;
+}
+button{
+    transition: all 0.5s linear;
+}
+button:hover{
+    cursor: pointer;color: white;scale: 102%;
+}
+.over{
+    background-color: rgb(252, 249, 249);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    animation: op 0.5s linear forwards;
+    pointer-events: none;
+    z-index: 99999;
+}
+@keyframes op {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.container{
+    width: 100%;
+    margin: 0px auto;
+    
+}
+.frame1{
+    width: 100%;
+    height: 38px;
+    background-color: black;display: flex;justify-content: center;align-items: center;gap: 7px;
+}
+.frame1 p {font-size: 14px;font-weight: 400;color: white;}
+.frame1 a {
+    color: white;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.framep{
+    position: relative;left: 504px;
+}
+.nav{
+    height:41px;
+    width:85%;
+    /* background-color: #F2F0F1; */
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;align-items: center;
+}
+.SHOP{
+    font-weight:700;font-size: 38px;line-height: 100%;
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;gap: 20px;
+}
+.search{
+    height: 48px;
+    width: 577px;
+    background-color: #F0F0F0;
+    border-radius: 50px;border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;gap: 10px;
+}
+.icon{
+    width: 62px;
+    height: 24px;cursor: pointer;border: none;background-color: transparent;
+}
+.search input:focus{
+    outline: none;font-size: 16pxpx;
+}
+.btne{width: 100%;background-color: black;border: 1px solid white;}
+.btne:hover{background-color: black;}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: auto;
+    width: 88%;
+    margin:30px auto;
+
+}
+.side1{
+    height: 1300px;
+    width: 100%;border: 1px solid rgb(148, 147, 147);border-radius: 20px;padding: 20px;box-sizing: border-box;position: relative;
+
+}
+.filter{
+    display: flex;justify-content: space-between;
+}
+.list{
+    list-style: none;font-size: 18px;color: #00000099;
+
+}
+.list li{
+    margin: 10px 0px;
+}
+.arrow p{font-size: 18px;margin: 10px 0px;}
+.line{
+    margin: 20px auto;
+}
+.price{
+    font-size: 20px;font-weight: 700;display: flex;justify-content: space-evenly;gap: 80px;margin:30px auto
+}
+.color{margin-top: 20px;
+    display: grid;grid-template-columns: repeat(5,1fr);
+grid-template-rows:37px ;gap: 20px;}
+.boxcolor{
+    height: 37px;width: 37px;border-radius: 50%;border: 1px solid gray;
+}
+.color .boxcolor:nth-child(1){background: #00C12B;}
+.color .boxcolor:nth-child(2){background-color: red;}
+.color .boxcolor:nth-child(3){background-color: yellow;}
+.color .boxcolor:nth-child(4){background-color: orange;}
+.color .boxcolor:nth-child(5){background-color: skyblue;}
+.color .boxcolor:nth-child(6){background-color: blue;}
+.color .boxcolor:nth-child(7){background-color: blueviolet;}
+.color .boxcolor:nth-child(8){background-color: pink;}
+.color .boxcolor:nth-child(9){background-color: white;}
+.color .boxcolor:nth-child(10){background-color: black;}
+.size{
+    height: auto;margin: 20px auto
+
+}
+.size .btn{text-align: center;height: 40px;width:40%;margin: 5px;border-radius: 50px;border: none;color: gray;font-weight: 400;font-size: 16px;
+
+}
+.size .btn:nth-child(5){background-color: black;color: white;}
+.apply{
+    border-radius: 50px;
+height: 48px;width: 70%;background-color: black;margin: 20px 0px 15% 15%;color: white;font-weight: 500;}
+.first p{color: gray;font-size: 14px;}
+.first{
+    display: flex;justify-content: space-between;padding-left: 5px;
+}
+.side2{padding: 10px;box-sizing: border-box;}
+.box{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    height:auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:298px 120px;
+    /* grid-template-areas: "img1" "img2" "img3" "img4", "txt1" "txt2" "txt3" "txt4"; */
+    gap: 22px;justify-content: center;
+    margin:20px 15px
+}
+.innerbox{
+    height: 100%;
+    width: 100%;
+    background-color: #F0EEED;border-radius: 20px;
+}
+.innertxt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.innertxt h3{height:27px;font-weight: 700;text-transform:capitalize;}
+.innertxt p{
+    font-style: bold;
+    font-weight: 500;font-size: 27px;line-height: 22px;
+}
+.lastbtn{display: flex;justify-content: space-between;width: 100%;margin-top: 20px;}
+.center p{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;line-height: 40px;transition: all 0.5s linear;
+}
+/* .center p:nth-child(2){background-color: black;} */
+.center{display: flex;text-align: center;}
+.lastblack{
+    height: 180px;
+    width: 90%;background-color: black;border-radius: 20px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;position: relative;top: 90px;
+}
+.headblack{
+     height:94px;width:551px;font-size:40px;font-weight: 900; color: white;padding: 40px;margin-left:50px;
+}
+.gmail{
+    height:110px;width: 360px;margin-right: 60px;
+    ;
+}
+.email{
+    width: 100%;
+    height: 48px;
+    border-radius: 50px;
+    background-color: white;
+    padding-left: 30px;
+    box-sizing: border-box;outline: none;
+}
+.gmail button{height: 48px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: white;margin-top:10px;
+    font-weight: 500;
+
+}
+.center p:hover{background-color: black;color: white;}
+.last{
+    height: 500px;
+    width: 100%;
+    background: #F0F0F0;padding-top: 140px;box-sizing: border-box;
+
+}
+.footer{
+    height: 180px;
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 250px 104px 136px 150px 150px;
+    gap: 120px;
+
+}
+.fbox{
+    width: 100%;
+    height: 100%;
+position: relative;
+}
+.fbox h1{
+    margin-bottom: 10px;font-weight:900;
+}
+.fbox span{font-size: 14px;color: gray;margin-top: 20px}
+.fbox div{
+    /* position: absolute; */
+    margin-top: 0px;  display: flex;gap:4px;
+    
+}
+.fbox .p1{
+    letter-spacing: 2px;font-family: 500;color:black;font-size:17px;
+}
+.fbox p {
+    margin-top: 15px;color: gray;font-size: 15px;
+}
+.card{display: flex;justify-content: space-around;}
